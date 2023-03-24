@@ -1,0 +1,13 @@
+-cp src
+
+-lib heaps
+-lib hlsdl
+
+-D windowSize=800x600
+-D windowTitle=WindowNameHere
+-D dce=full
+
+-hl client.hl
+
+-main Main
+-debug
