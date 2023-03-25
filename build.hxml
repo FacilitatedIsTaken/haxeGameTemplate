@@ -1,19 +1,26 @@
+# Sets the source directory to "src"
 -cp src
 
--lib heaps 
+# Includes the "heaps" library
+-lib heaps
 
-#Imports HLSDL
+# Includes the "hlsdl" library
 -lib hlsdl
 
-# Sets window size
+# Sets the size of the window to 800x600
 -D windowSize=800x600
-#Sets window Title 
+
+# Sets the title of the window to "WindowNameHere"
 -D windowTitle=WindowNameHere
-#Enables Dead Code Elimination, The Docs are available here: https://haxe.org/manual/cr-dce.html
+
+# Enables Dead Code Elimination, with full optimization level. Documentation available at: https://haxe.org/manual/cr-dce.html
 -D dce=full
 
-#Where hashlink should make the .hl file, default location is {WorkSpace}
--hl client.hl 
+# Specifies the location where the compiled .hl file should be saved, default location is {WorkSpace}
+-hl client.hl
 
--main Main   
--debug 
+# Sets the main .hx file
+-main Main
+
+# Enables debugging
+-debug
