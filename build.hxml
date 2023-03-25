@@ -1,13 +1,19 @@
 -cp src
 
--lib heaps
+-lib heaps 
+
+#Imports HLSDL
 -lib hlsdl
 
+# Sets window size
 -D windowSize=800x600
+#Sets window Title 
 -D windowTitle=WindowNameHere
+#Enables Dead Code Elimination, The Docs are available here: https://haxe.org/manual/cr-dce.html
 -D dce=full
 
--hl client.hl
+#Where hashlink should make the .hl file, default location is {WorkSpace}
+-hl client.hl 
 
--main Main
--debug
+-main Main   
+-debug 
